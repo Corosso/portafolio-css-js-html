@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fas fa-briefcase"></i>Portafolio</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/tech.html" class="navbar__links">Pruebas tecnicas</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links">Proyectos</a>
+        </ul>
+      </div>
+    </nav>
+    <div class="clearfix"></div>
+
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>MI PORTAFOLIO</h1>
+          <h2>Federico Rodriguez</h2>
+          <p>Un pequeño vistazo a mi trabajo.</p>
+          <button class="main__btn"><a href="#">Echar un vistazo!</a></button>
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="images/pic1.svg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id='services'class="services">
+      <h1>Proyectos</h1>
+      <div class="services__container">
+        <div class="services__card">
+          <h2>ValoAI</h2>
+          <p>Un proyecto de machine learning con Sci-Kit Learn y Python</p>
+          <button onclick="window.open('https://github.com/Corosso/ValoAI', '_blank')">Echar un vistazo!</button>
+        </div>        
+        <div class="services__card">
+          <h2>Face recognition</h2>
+          <p>Sistema de reconimiento facial en una web usando OpenCV y Python</p>
+          <button onclick="window.open('https://github.com/Corosso/Face-recognition', '_blank')">Echar un vistazo!</button>
+        </div>
+        <div class="services__card">
+          <h2>Proyecto de aula "Aplicaciones y servicios web</h2>
+          <p>Proyecto Full stack, se crearon APIS usando ASP.NET y front con CSS Y JavaScript</p>
+          <button onclick="window.open('https://github.com/Corosso/ProyectoAppySW', '_blank')">Echar un vistazo!</button>
+        </div>
+        <div class="services__card">
+          <h2>Este sitio web</h2>
+          <p>Portafolio web usando CSS y JavaScript</p>
+          <button onclick="window.open('https://github.com/Corosso/ProyectoAppySW', '_blank')">Echar un vistazo!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"><i class="fas fa-briefcase"></i>Portafolio</a>
+          </div>
+          <p class="website__rights">© Portafolio 2024. All rights reserved</p>
+          <div class="social__icons">
+
+
+            <a
+              class="social__icon--link"
+              href="https://github.com/Corosso"
+              target="_blank"
+              
+            >
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a
+              class="social__icon--link"
+              href="https://www.linkedin.com/in/federico-rodr%C3%ADguez-franco-9b705a252/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
