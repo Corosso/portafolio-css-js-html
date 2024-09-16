@@ -317,6 +317,109 @@
     }
   }
 
+/*About me*/
+
+
+
+
+#description {
+  background-color: #131313;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+#description h2{
+  color: #a00fb9;
+  
+}
+
+#description-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#lang-toggle {
+  float: right;
+  margin-top: -10px;
+}
+
+
+  /*MENU HORIZONTAL*/
+
+.tecnologias{
+  background-color: #131313;
+  padding: 20px;
+}
+
+.tecnologias h2 {
+  background-color: #000000;
+  background-image: linear-gradient(
+    to right,
+    #ff00dd 0%,
+    #c30cdb 0%,
+    #a50b98 21%,
+    #b70cce 52%,
+    #9903d4 78%,
+    #eb12ff 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+.menu-container {
+  background-color: #2a0431;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px;
+}
+
+
+
+.menu-item {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  flex: 0 0 120px; 
+  white-space: nowrap; 
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.menu-item img {
+  width: 500px; 
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+}
+.menu-item span {
+  display: block;
+  font-size: 24px; 
+  margin-top: 5px;
+}
+
+.menu-item:hover {
+  background-color: #d1d1d1;
+  cursor: pointer;
+}
+
+
+.menu-container::-webkit-scrollbar {
+  display: none;
+}
+
+
   
   /* Services Section */
 .services {
@@ -326,6 +429,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+
 }
 
 .services h1 {
@@ -352,6 +456,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative; /* Para evitar superposición */
+  z-index: 10;        /* Asegura que esté por encima de otros elementos */
+  min-height: 60px;   /* Establece una altura mínima */
+  margin-top: 20px;   /* Evita que otros elementos se acerquen demasiado */
+  margin-bottom: 20px;
+  
 }
 
 .services__card {
@@ -368,6 +478,7 @@
   background-size: cover;
   position: relative;
   color: #fff;
+  
 }
 
 .services__card:before {
@@ -589,6 +700,8 @@
   }
 }
 
+
+
 /*SEccion pruebas tecnicas*/
 
 .main__container2 {
@@ -680,6 +793,8 @@
     width: 300px;
   }
 }
+
+
 
 
 
