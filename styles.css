@@ -323,26 +323,29 @@
 
 
 #description {
-  background-color: #131313;
+  background-color: #141414;
   padding: 20px;
   margin-bottom: 20px;
+  border-radius: 5%;
+  
 }
 
 
-#description h2{
+#description h3{
   color: #a00fb9;
-  
+  text-align: center;
 }
 
 #description-text {
   font-size: 18px;
   margin-bottom: 10px;
   color: #fff;
+  text-align: justify;
 }
 
 #lang-toggle {
   float: right;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 

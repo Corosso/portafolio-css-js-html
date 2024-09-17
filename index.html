@@ -46,7 +46,7 @@
           <h1>MI PORTAFOLIO</h1>
           <h2>Federico Rodriguez</h2>
           <p>Un pequeño vistazo a mi trabajo.</p>
-          <button class="main__btn" onclick="location.href='#tecnologias'">Echar un vistazo!</button>
+          <button class="main__btn" onclick="window.scrollTo({ top: document.querySelector('#tecnologias').offsetTop, behavior: 'smooth' });">Echar un vistazo!</button>
         </div>
         <div class="main__img--container">
           <img id="main__img" src="images/pic1.svg" />
@@ -55,7 +55,7 @@
     </div>
 <!-- About me Section -->   
 <section id="description">
-  <h2>About Me</h2>
+  <h3>About Me</h3>
   <p id="description-text" data-lang="es">Descripción en español</p>
   <button id="lang-toggle" class="main__btn">English</button>
 </section>

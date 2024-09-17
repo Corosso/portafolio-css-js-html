@@ -27,7 +27,7 @@ fetch('lang.json')
         langToggle.textContent = 'English';
         currentLang = 'es';
       }
-      const titleText = document.querySelector('h2');
+      const titleText = document.querySelector('h3');
       titleText.textContent = langData[currentLang].title;
     });
   })
