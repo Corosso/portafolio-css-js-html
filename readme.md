@@ -21,7 +21,7 @@ This project is a responsive web application featuring a services section with v
 - Elegant service cards with background images and text overlays.
 - Smooth hover effects on cards for better user interaction.
 - Modern footer with social media icons.
-
+- About me section language can be changed between english and spanish
 
 
 ## Usage
