@@ -15,6 +15,7 @@ This project is a responsive web application featuring a services section with v
 ## Technologies
 - HTML
 - CSS
+- particles.js
 
 ## Features
 - Responsive design that adapts to different screen sizes.
