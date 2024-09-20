@@ -6,7 +6,6 @@ This project is a responsive web application featuring a services section with v
 ## Table of Contents
 - [Technologies](#technologies)
 - [Features](#features)
-- [File Structure](#file-structure)
 - [Usage](#usage)
 - [Styling](#styling)
 - [Contributing](#contributing)
@@ -23,10 +22,6 @@ This project is a responsive web application featuring a services section with v
 - Smooth hover effects on cards for better user interaction.
 - Modern footer with social media icons.
 
-## File Structure
-```bash
-project-directory/ ├── index.html ├── styles.css └── images/ ├── pic3.jpg ├── pic4.jpg ├── pic5.jpg └── pic6.jpg
-```
 
 
 ## Usage
