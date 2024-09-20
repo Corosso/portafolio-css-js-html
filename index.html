@@ -54,15 +54,12 @@
       </div>
     </div>
 <!-- About me Section -->   
-<div id="particles.js">
-<section id="description">
-  
-  <h3>About Me</h3>
-  <p id="description-text" data-lang="es">Descripción en español</p>
-  <button id="lang-toggle" class="main__btn">English</button>
-  
-
-</section>
+<div id="particles-js">
+  <div id="inner">
+    <h3>Sobre mí</h3>
+    <p id="description-text" data-lang="es">¡Hola! Soy Federico Rodríguez, algunos me llaman 'Coro' y llevo programando durante 6 años. Soy un Desarrollador de Software con una gran pasión por enfrentar retos y explorar nuevas tecnologías. Actualmente, soy Tecnólogo en Desarrollo de Software y estoy cursando una Ingeniería en Sistemas para seguir mejorando mis habilidades y conocimientos en el mundo tecnológico. Disfruto resolviendo problemas y me encanta trabajar con diversas herramientas y frameworks para construir soluciones innovadoras. Mi curiosidad y motivación me mantienen en constante aprendizaje y crecimiento dentro del campo de la tecnología. Cuando no estoy programando, probablemente me encontrarás en el campo de fútbol o inmerso en un buen videojuego.</p>
+    <button id="lang-toggle" class="main__btn">English</button>
+  </div>
 </div>
 
 <!-- Tech Section -->   
@@ -191,122 +188,8 @@
       </section>
     </div>
     <script type="module" src="app.js"></script>
-    <script source="particles.min.js"></script>
-    <script>
-      particlesJS(
-          {
-    "particles": {
-      "number": {
-        "value": 80,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "window",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "grab"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 455.5444555444555,
-          "line_linked": {
-            "opacity": 0.33190049461268845
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true
-  }
-  
-  )
-    </script>
+    <script src="particles.min.js"></script>    
+    <script src="scriptparticles.js"></script>    
     
   </body>
 

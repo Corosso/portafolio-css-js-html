@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>HTML CSS Website</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-          crossorigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-
-<style> 
-#particles-js{
-  background:rgba(255, 0, 0, 0.6);
-}
-</style>
-<body>
-
-    <div id="particles-js">
-    </div>
-
-
-
-  
-    
-    <script source="particles.min.js"></script>
-    <script>
-      particlesJS(
-          {
+particlesJS('particles-js', {
     "particles": {
       "number": {
         "value": 80,
@@ -104,7 +68,7 @@
       }
     },
     "interactivity": {
-      "detect_on": "window",
+      "detect_on": "canvas",
       "events": {
         "onhover": {
           "enable": true,
@@ -112,15 +76,15 @@
         },
         "onclick": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "push"
         },
         "resize": true
       },
       "modes": {
         "grab": {
-          "distance": 455.5444555444555,
+          "distance": 400,
           "line_linked": {
-            "opacity": 0.33190049461268845
+            "opacity": 1
           }
         },
         "bubble": {
@@ -142,11 +106,6 @@
         }
       }
     },
-    "retina_detect": true
-  }
-  
-  )
-    </script>
-
-</body>
-</html>
+    "retina_detect": true,
+    
+  });

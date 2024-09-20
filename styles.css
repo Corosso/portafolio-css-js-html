@@ -319,38 +319,57 @@
 
 /*About me*/
 
+canvas {
+  position: absolute !important; /* Asegura que el canvas esté al fondo */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
 
-
-
-#description {
-  background-color: #141414;
+#particles-js {
+  background-color: #2a0431;
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 5%;
+  position: relative;
+  z-index: 1; 
+  overflow: hidden;
+  margin: 0%; 
+  
+}
+#inner {
+  position: relative;
+  overflow: hidden;
+  
   
 }
 
-
-#description h3{
+#particles-js h3 {
   color: #a00fb9;
   text-align: center;
+  
+  position: relative; 
 }
 
-#description-text {
+#particles-js p {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #fff;
+  color: #ffffffd2;
   text-align: justify;
+  z-index: 0;
+  position: relative; 
 }
 
 #lang-toggle {
-  float: right;
+  display: inline-block;
   margin-top: 10px;
+  z-index: 1;
+  
+  margin-top: 10px;
+  z-index: 1;
+  position: relative; 
 }
 
-#particles-js{
-  background-color:rgba(216, 198, 198, 0.6);
-}
+
 
 
   /*MENU HORIZONTAL*/
@@ -436,6 +455,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  
 
 }
 
@@ -463,11 +483,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  position: relative; /* Para evitar superposición */
-  z-index: 10;        /* Asegura que esté por encima de otros elementos */
-  min-height: 60px;   /* Establece una altura mínima */
-  margin-top: 20px;   /* Evita que otros elementos se acerquen demasiado */
-  margin-bottom: 20px;
+  position: relative; 
+  z-index: 10;        
+  min-height: 60px;   
+  margin-top: 20px;   
+  margin-bottom: 70px;
+  
   
 }
 
@@ -539,30 +560,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 960px) {
-  .services {
-    height: 1600px;
-  }
 
-  .services h1 {
-    font-size: 2rem;
-    margin-top: 12rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .services {
-    height: 1400px;
-  }
-
-  .services h1 {
-    font-size: 1.2rem;
-  }
-
-  .services__card {
-    width: 300px;
-  }
-}
 .services__card:nth-child(3) {
   background-image: linear-gradient(
       to bottom,
@@ -610,30 +608,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 960px) {
-  .services {
-    height: 1600px;
-  }
 
-  .services h1 {
-    font-size: 2rem;
-    margin-top: 12rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .services {
-    height: 1400px;
-  }
-
-  .services h1 {
-    font-size: 1.2rem;
-  }
-
-  .services__card {
-    width: 300px;
-  }
-}
 
 .services__card:nth-child(4) {
   background-image: linear-gradient(
@@ -682,30 +657,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 960px) {
-  .services {
-    height: 1600px;
-  }
 
-  .services h1 {
-    font-size: 2rem;
-    margin-top: 12rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .services {
-    height: 1400px;
-  }
-
-  .services h1 {
-    font-size: 1.2rem;
-  }
-
-  .services__card {
-    width: 300px;
-  }
-}
 
 
 
@@ -813,9 +765,14 @@
     background-color: #141414;
     padding: 5rem 0;
     display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    z-index: 2;
+    clear: both;
   }
   
   #footer__logo {
