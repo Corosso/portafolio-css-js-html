@@ -28,7 +28,7 @@ This project is a responsive web application featuring a services section with v
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/project-name.git
+git clone https://github.com/Corosso/portafolio-css-js-html.git
 ```
 Navigate to the project directory:
 
