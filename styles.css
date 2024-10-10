@@ -682,6 +682,18 @@ canvas {
   height: 525px;
   width: 400px;
   border-radius: 4px;
+  position: relative;
+  color: #fff;
+  overflow: hidden; 
+}
+
+.services__card2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
@@ -689,19 +701,32 @@ canvas {
     ),
     url('/images/pic6.jpg');
   background-size: cover;
-  position: relative;
-  color: #fff;
+  filter: blur(5px); 
+  z-index: -1; 
+}
+.services__card2:nth-child(2)::before {
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url('/images/pic8.jpg');
+    
+    
+
 }
 
 .services__card2 h2 {
   position: absolute;
-  top: 350px;
+  top: 50px;
   left: 30px;
+  color: #000000;
 }
 
 .services__card2 p {
   position: absolute;
-  top: 400px;
+  top: 350px;
   left: 30px;
 }
 
